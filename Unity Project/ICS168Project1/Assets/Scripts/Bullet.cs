@@ -20,16 +20,17 @@ public class Bullet : NetworkBehaviour {
 	void OnCollisionEnter(Collision theCollision) {
 		if (theCollision.gameObject.name == "Terrain")
 			isgrounded = true;
+		else if (theCollision.gameObject.CompareTag ("Enemy")) {
+			theCollision.gameObject.SetActive (false);
+			Debug.Log ("Target Hit");
+		}
 	}
 		
 	void OnCollisionExit(Collision theCollision) {
 		if (theCollision.gameObject.name == "Terrain")
 			isgrounded = false;
-	}
-
-	void OnTriggerEnter(Collider other){
-		if (other.gameObject.CompareTag ("Enemy")) {
-			other.gameObject.SetActive (false);
+		else if (theCollision.gameObject.CompareTag ("Enemy")) {
+			theCollision.gameObject.SetActive (false);
 			Debug.Log ("Target Hit");
 		}
 	}
