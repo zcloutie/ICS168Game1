@@ -8,9 +8,11 @@ public class PlayerControllerScript : NetworkBehaviour
 	public Camera cam;
 
 	private bool isdriving = false;
-	private bool intrigger = false;
+	private bool intriggerwheel = false;
+	private bool intriggergun = false;
 	public GameObject ship;
 	private ShipController shipscript;
+	private Cannon guncode;
 	private Camera shipcam;
 
 	void Start(){
@@ -35,7 +37,7 @@ public class PlayerControllerScript : NetworkBehaviour
 		if (!isdriving) {
 			cam.enabled = true;
 		}
-		if (intrigger) {
+		if (intriggerwheel) {
 			if (Input.GetKeyUp ("e")) {
 				if (!shipscript.driven) {
 					isdriving = true;
@@ -51,6 +53,13 @@ public class PlayerControllerScript : NetworkBehaviour
 				}
 			}
 		}
+
+		if (intriggergun) {
+			if (Input.GetKeyUp ("e")) {
+				guncode.Fire ();
+			}
+		}
+
 		if (!isdriving) {
 			CharacterController controller = GetComponent<CharacterController> ();
 			transform.Rotate (0, Input.GetAxis ("Horizontal") * rotateSpeed, 0);
@@ -71,14 +80,18 @@ public class PlayerControllerScript : NetworkBehaviour
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Ship") {
-			intrigger = true;
-			Debug.Log ("OK");
+			intriggerwheel = true;
+		} else if (other.tag == "Cannon") {
+			intriggergun = true;
+			guncode = other.GetComponent<Cannon> ();
 		}
 	}
 
 	void OnTriggerExit(Collider other){
 		if (other.tag == "Ship") {
-			intrigger = false;
+			intriggerwheel = false;
+		} else if (other.tag == "Cannon") {
+			intriggergun = false;
 		}
 	}
 }

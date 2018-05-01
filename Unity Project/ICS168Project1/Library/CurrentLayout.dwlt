@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 342}
   m_MaxSize: {x: 12008, y: 8042}
   vertical: 0
-  controlID: 34
+  controlID: 109
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -327,19 +327,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Zac C\Documents\Spring 18\168\ICS168Game1\Unity Project\ICS168Project1
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 08280000
-    m_LastClickedID: 10248
-    m_ExpandedIDs: 0000000086270000a62b0000b22b0000b42b0000c02b000000ca9a3bffffff7f
+    m_SelectedIDs: 3c280000
+    m_LastClickedID: 10300
+    m_ExpandedIDs: 000000009e27000018280000682800006e280000e028000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -367,7 +367,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086270000
+    m_ExpandedIDs: 000000009e27000018280000682800006e280000e0280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -392,9 +392,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: de5a0000
-    m_LastClickedInstanceID: 23262
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 70430000
+    m_LastClickedInstanceID: 17264
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 122dffff8c270000c8060000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -487,18 +487,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 84f1f8ffeef1f8ff16f3f8ff4613f9ffa813f9ffd014f9ff902cfaff0a2dfaff322efaff4c50faffc650faffee51faff9864faff1065faff3866faff20a3faff9aa3faffc2a4faff40d8ffff9cfbffff9efbffff00000000e6490000065b0000785f0000
+    m_ExpandedIDs: 8836fbffea36fbff1438fbffd2f1fbff48f2fbff72f3fbff6cfbffff6efbffff70fbffff72fbffff74fbffff76fbffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Water4SimpleReflectionSceneCamera
-      m_OriginalName: Water4SimpleReflectionSceneCamera
+      m_Name: BulletSpawn (4)
+      m_OriginalName: BulletSpawn (4)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -10208
+      m_UserData: -184752
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -538,14 +538,14 @@ MonoBehaviour:
     height: 411
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 588.3030874432544
+  lastFramingTime: 2350.5132355398687
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.3978658, y: 2.4445095, z: -5.526315}
+    m_Target: {x: 3.874092, y: 33.721447, z: -6.078105}
     speed: 2
-    m_Value: {x: 3.3978658, y: 2.4445095, z: -5.526315}
+    m_Value: {x: 3.874092, y: 33.721447, z: -6.078105}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -569,13 +569,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.2172459, y: 0.60570484, z: -0.17667699, w: 0.74478936}
+    m_Target: {x: 0.15400966, y: 0.64345753, z: -0.13433576, w: 0.7376973}
     speed: 2
-    m_Value: {x: 0.2172459, y: 0.60570484, z: -0.17667699, w: 0.74478936}
+    m_Value: {x: 0.15400966, y: 0.64345753, z: -0.13433576, w: 0.7376973}
   m_Size:
-    m_Target: 18.255934
+    m_Target: 81.79168
     speed: 2
-    m_Value: 18.255934
+    m_Value: 81.79168
   m_Ortho:
     m_Target: 0
     speed: 2
