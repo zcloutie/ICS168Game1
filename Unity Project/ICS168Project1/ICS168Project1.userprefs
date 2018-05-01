@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerControllerScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerControllerScript.cs" Line="9" Column="2" />
+      <File FileName="Assets\Scripts\PlayerControllerScript.cs" Line="14" Column="25" />
+      <File FileName="Assets\Scripts\ShipController.cs" Line="19" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
